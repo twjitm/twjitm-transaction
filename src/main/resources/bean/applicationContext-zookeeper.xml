@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="nettyTransactionZookeeperService"
+      class="com.twjitm.transaction.service.zookeeper.impl.NettyTransactionZookeeperServiceImpl" init-method="init">
+    <property name="host" value="127.0.0.1"/>
+    <property name="port" value="2181"/>
+    <property name="rootNode" value="/register_lock"/>
+</bean>
+
+</beans>
