@@ -1,0 +1,1 @@
+package com.twjitm.transaction.config;/** * @author twjitm - [Created on 2018-10-17 15:27] */public enum TransactionDataSourceType {    /**     * redis 模式     */    redis,    /**     * redis 集群模式     */    redis_cluster,    /**     * zookeeper模式     */    zookeeper;}
